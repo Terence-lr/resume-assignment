@@ -1,0 +1,94 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.main-container {
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Picture Styling: Rectangular Look */
+.profile-pic {
+  width: 300px;
+  height: 180px; /* Rectangular shape */
+  border-radius: 8px; /* Slight rounded corners for a modern look */
+  object-fit: cover; /* Ensures the image scales correctly */
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Section Headings */
+h2 {
+  margin-top: 20px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Experience and Education Sections */
+.job {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Link Styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    width: 95%;
+  }
+
+  .profile-pic {
+    width: 80%; /* Adjust for smaller screens */
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
